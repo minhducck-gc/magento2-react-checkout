@@ -1,2 +1,3 @@
 export const SET_PAGE_LOADER = 'SET_PAGE_LOADER';
 export const SET_PAGE_MESSAGE = 'SET_PAGE_MESSAGE';
+export const SET_CURRENT_STEP = 'SET_CURRENT_STEP';

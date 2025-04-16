@@ -15,7 +15,7 @@ const CartItemsMemorized = React.memo(({ formikData }) => {
   return (
     <CartItemsFormManager formikData={formikData}>
       <Card classes={cartItemsAvailable ? '' : 'opacity-75'}>
-        <ToggleBox show title={__('Product Details')}>
+        <ToggleBox show title={__('Order Summary')}>
           {cartItemsAvailable ? <CartItemList /> : <NoItemsInfoBox />}
         </ToggleBox>
       </Card>

@@ -76,7 +76,6 @@ const addressInitValues = {
 const requiredMessage = __('%1 is required');
 
 export const addressInitialValidationSchema = {
-  company: YupString().required(requiredMessage),
   firstname: YupString().required(requiredMessage),
   lastname: YupString().required(requiredMessage),
   street: YupArray(),

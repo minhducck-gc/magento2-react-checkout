@@ -70,6 +70,7 @@ function CartItem({ item, isLastItem, actions }) {
       </td>
 
       {/** MOBILE TD ELEMENTS */}
+      {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
       <td className="px-2 py-2 md:hidden">
         <table className="w-full">
           <tbody>

@@ -11,3 +11,10 @@ export function setPageMessage(state, message) {
     message,
   };
 }
+
+export function setActiveStep(state, activeStep) {
+  return {
+    ...state,
+    activeStep,
+  };
+}

@@ -12,8 +12,12 @@ import {
 } from './customer/types';
 import { AGGREGATED_APP_DATA } from './aggregated/types';
 import { setAggregatedData } from './aggregated/reducers';
-import { setPageLoader, setPageMessage } from './page/reducers';
-import { SET_PAGE_LOADER, SET_PAGE_MESSAGE } from './page/types';
+import { setActiveStep, setPageLoader, setPageMessage } from './page/reducers';
+import {
+  SET_PAGE_LOADER,
+  SET_PAGE_MESSAGE,
+  SET_CURRENT_STEP,
+} from './page/types';
 import { SET_CHECKOUT_AGREEMENTS } from './checkoutAgreements/types';
 import { setCheckoutAgreements } from './checkoutAgreements/reducers';
 import { ADD_COUNTRY_STATES, SET_COUNTRY_LIST } from './countries/type';
@@ -30,6 +34,7 @@ const actions = {
   [SET_CUSTOMER_ADDRESS_INFO]: setCustomerAddressInfo,
   [UPDATE_CUSTOMER_ADDRESS]: updateCustomerAddressReducer,
   [UPDATE_CUSTOMER_LOGGEDIN_STATUS]: setCustomerLoggedInStatusReducer,
+  [SET_CURRENT_STEP]: setActiveStep,
 };
 
 export default function appReducer(state, { type, payload }) {

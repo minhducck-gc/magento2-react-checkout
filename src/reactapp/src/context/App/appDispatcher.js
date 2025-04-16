@@ -3,6 +3,7 @@ import {
   setPageLoaderAction,
   setErrorMessageAction,
   setSuccessMessageAction,
+  setStepAction,
 } from './page/actions';
 import {
   fetchCountriesAction,
@@ -34,6 +35,8 @@ const dispatchMapper = {
   getCheckoutAgreements: getCheckoutAgreementsAction,
   getCustomerAddressList: getCustomerAddressListAction,
   storeAggregatedAppStates: storeAggregatedAppStatesAction,
+
+  setActiveStep: setStepAction,
 };
 
 export default function appDispatcher(dispatch) {

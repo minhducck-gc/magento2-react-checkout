@@ -12,6 +12,7 @@ const initialState = {
   message: false,
   pageLoader: false,
   stateList: {},
+  activeStep: 0,
 };
 
 export default initialState;

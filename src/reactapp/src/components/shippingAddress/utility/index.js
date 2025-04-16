@@ -9,5 +9,5 @@ export function selectedAddressTitle(isLoggedIn, customerAddressList) {
     return __('SHIPPING ADDRESS');
   }
 
-  return __('SELECTED ADDRESS');
+  return __('DEFAULT ADDRESS');
 }

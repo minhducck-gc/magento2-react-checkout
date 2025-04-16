@@ -1,7 +1,7 @@
 import React from 'react';
 import { node, oneOf, string } from 'prop-types';
 
-function Card({ children, bg, classes }) {
+function Card({ children, bg = '', classes = '' }) {
   return (
     <div
       className={`card w-full px-4 py-4 relative ${
